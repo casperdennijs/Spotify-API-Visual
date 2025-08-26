@@ -4,17 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        main {
+            height: 100%;
+            aspect-ratio: .75/1;
+            border: 2px solid black;
+            padding: 2rem;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            margin: 0 auto;
+        }
+
+        main h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0;
+            text-align: center;
+            background: black;
+            color: pink
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+
+        div a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .top-artist {
+            font-size: 3.5rem;
+            font-weight: 900;
+        }
+
+        .top-5 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .top-10 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .top-20 {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .top-50 {
+            font-size: .75rem;
+            font-weight: 400;
+        }
+        #download {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            margin: 1rem auto;
+            padding: .5rem 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: black;
+            color: pink;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <ol>
-        <% items.forEach(function(item) { %>
-            <li>
-            <%= item.name %> 
-            <% if (item.artists) { %>
-                by <%= item.artists.map(a => a.name).join(', ') %>
-            <% } %>
-            </li>
-        <% }) %>
-    </ol>
+    <main id="capture">
+        <div class="top-artist">
+            <% items.slice(0, 1).forEach(item => { %>
+                <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
+            <% }) %>
+        </div>
+        <div class="top-5">
+            <% items.slice(1, 5).forEach(item => { %>
+                <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
+            <% }) %>
+        </div>
+        <div class="top-10">
+            <% items.slice(5, 10).forEach(item => { %>
+                <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
+            <% }) %>
+        </div>
+        <div class="top-20">
+            <% items.slice(10, 20).forEach(item => { %>
+                <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
+            <% }) %>
+        </div>
+        <div class="top-50">
+            <% items.slice(20).forEach(item => { %>
+                <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
+            <% }) %>
+        </div>
+    </main>
+
+    <button id="download">Download as PNG</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <script>
+        document.getElementById("download").addEventListener("click", () => {
+            const element = document.getElementById("capture");
+
+            html2canvas(element, { backgroundColor: null }).then(canvas => {
+                const imgData = canvas.toDataURL("image/png");
+
+                const link = document.createElement("a");
+                link.href = imgData;
+                link.download = "my-element.png";
+                link.click();
+            });
+        });
+    </script>
 </body>
 </html>
