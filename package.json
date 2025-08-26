@@ -1,17 +1,28 @@
 {
-  "name": "nuxt-app",
-  "type": "module",
-  "private": true,
+  "name": "spotify-api-visual",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/casperdennijs/Spotify-API-Visual#readme",
+  "bugs": {
+    "url": "https://github.com/casperdennijs/Spotify-API-Visual/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casperdennijs/Spotify-API-Visual.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "nodemon index.js"
   },
   "dependencies": {
-    "nuxt": "^4.0.3",
-    "vue": "^3.5.20",
-    "vue-router": "^4.5.1"
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
