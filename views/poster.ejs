@@ -122,7 +122,7 @@
     <main id="capture">
         <h1>Your Spotify Festival</h1>
         <div class="day friday">
-            <h2>• <%= days[date.getDay()-1] %>, <%= date.getDate()-1 %> <%= month[date.getMonth()] %> •</h2>
+            <h2>• <%= days[date.getDay()-1] %>, <%= date.getDate() %> <%= month[date.getMonth()] %> •</h2>
             <div class="headliner">
                 <% items.slice(0, 1).forEach(item => { %>
                     <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
@@ -141,7 +141,7 @@
         </div>
         <div class="divider"></div>
         <div class="day saturday">
-            <h2>• <%= days[date.getDay()] %>, <%= date.getDate() %> <%= month[date.getMonth()] %> •</h2>
+            <h2>• <%= days[date.getDay()] %>, <%= date.getDate()+1 %> <%= month[date.getMonth()] %> •</h2>
             <div class="headliner">
                 <% items.slice(1, 2).forEach(item => { %>
                     <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
@@ -160,7 +160,7 @@
         </div>
         <div class="divider"></div>
         <div class="day sunday">
-            <h2>• <%= days[date.getDay()+1] %>, <%= date.getDate()+1 %> <%= month[date.getMonth()] %> •</h2>
+            <h2>• <%= days[date.getDay()+1] %>, <%= date.getDate()+2 %> <%= month[date.getMonth()] %> •</h2>
             <div class="headliner">
                 <% items.slice(2, 3).forEach(item => { %>
                     <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
