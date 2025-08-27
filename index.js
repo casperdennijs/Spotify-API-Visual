@@ -9,7 +9,6 @@ app.use(session({
   cookie: { secure: false }
 }))
 const path = require('path');
-const port = 3000;
 
 var client_id = 'c75febbdc63941e597b4e8520622a7c5';
 var client_secret = 'f04c16f242c94bc6a7b48b704ba5e090';
@@ -89,6 +88,5 @@ app.get('/poster', async (req, res) => {
     res.render('poster', { items: data.items });
 });
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
-});
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on ${port}`));
