@@ -1,182 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Spotify Festival</title>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            line-height: 1;
-        }
-
-        html, body {
-            height: 100%;
-            font-family: 'DynaPuff', sans-serif;
-            color: #fff;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        main {
-            max-height: calc(100vh - 100px);
-            aspect-ratio: .75/1;
-            background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url("https://images.pexels.com/photos/1078981/pexels-photo-1078981.jpeg");
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 2rem;
-            padding: 2rem;
-            border-radius: 5px;
-            transform: scale(.95);
-            transition: 200ms ease-in;
-        }
-
-        main:hover {
-            transform: scale(1);
-        }
-
-        main h1 {
-            text-align: center;
-            font-size: 3rem;
-        }
-
-        .day {
-            display: flex;
-            flex-direction: column;
-            gap: .5rem;
-        }
-
-        .day h2 {
-            text-align: center;
-            font-size: 1rem;
-            font-weight: 400;
-        }
-
-        .headliner, .featured, .other {
-            font-family: 'Montserrat', sans-serif;
-            display: flex;
-            gap: .5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .headliner a, .featured a, .other a {
-            text-decoration: none;
-        }
-
-        .headliner a:hover, .featured a:hover, .other a:hover {
-            text-decoration: underline;
-        }
-
-        .headliner {
-            font-size: 3rem;
-            font-weight: 900;
-        }
-
-        .headliner a {
-            color: #fff;
-        }
-
-        .featured {
-            font-size: 1.5rem;
-            font-weight: 800;
-        }
-
-        .featured a {
-            color: #eee;
-        }
-
-        .other {
-            font-size: 1rem;
-            font-weight: 700;
-        }
-
-        .other a {
-            color: #ddd;
-        }
-
-        .divider {
-            width: 50px;
-            border: 1px solid white;
-            margin: 0 auto;
-        }
-    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
 </head>
+
 <body>
-    <%
-        const date = new Date();
-        const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-        const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    %>
-    <main id="capture">
-        <h1>Your Spotify Festival</h1>
-        <div class="day friday">
-            <h2>• <%= days[date.getDay()-1] %>, <%= date.getDate() %> <%= month[date.getMonth()] %> •</h2>
-            <div class="headliner">
-                <% items.slice(0, 1).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
+    <% const date=new Date(); const days=["Monday", "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday"
+        , "Sunday" ]; const month=["Jan", "Feb" , "Mar" , "Apr" , "May" , "Jun" , "Jul" , "Aug" , "Sep" , "Oct" , "Nov"
+        , "Dec" ] %>
+        <main>
+            <div id="poster" class="poster bg-1">
+                <h1>Your Spotify Festival</h1>
+                <div class="day friday">
+                    <h2>• <%= days[date.getDay()-1] %>, <%= date.getDate() %>
+                                <%= month[date.getMonth()] %> •</h2>
+                    <div class="headliner">
+                        <% items.slice(0, 1).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                    <div class="featured">
+                        <% items.slice(3, 6).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                    <div class="other">
+                        <% items.slice(6, 12).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="day saturday">
+                    <h2>• <%= days[date.getDay()] %>, <%= date.getDate()+1 %>
+                                <%= month[date.getMonth()] %> •</h2>
+                    <div class="headliner">
+                        <% items.slice(1, 2).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                    <div class="featured">
+                        <% items.slice(12, 15).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                    <div class="other">
+                        <% items.slice(15, 21).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="day sunday">
+                    <h2>• <%= days[date.getDay()+1] %>, <%= date.getDate()+2 %>
+                                <%= month[date.getMonth()] %> •</h2>
+                    <div class="headliner">
+                        <% items.slice(2, 3).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                    <div class="featured">
+                        <% items.slice(21, 24).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                    <div class="other">
+                        <% items.slice(24, 30).forEach(item=> { %>
+                            <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                            <% }) %>
+                    </div>
+                </div>
             </div>
-            <div class="featured">
-                <% items.slice(3, 6).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
-            </div>
-            <div class="other">
-                <% items.slice(6, 12).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <div class="day saturday">
-            <h2>• <%= days[date.getDay()] %>, <%= date.getDate()+1 %> <%= month[date.getMonth()] %> •</h2>
-            <div class="headliner">
-                <% items.slice(1, 2).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
-            </div>
-            <div class="featured">
-                <% items.slice(12, 15).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
-            </div>
-            <div class="other">
-                <% items.slice(15, 21).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <div class="day sunday">
-            <h2>• <%= days[date.getDay()+1] %>, <%= date.getDate()+2 %> <%= month[date.getMonth()] %> •</h2>
-            <div class="headliner">
-                <% items.slice(2, 3).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
-            </div>
-            <div class="featured">
-                <% items.slice(21, 24).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
-            </div>
-            <div class="other">
-                <% items.slice(24, 30).forEach(item => { %>
-                    <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
-                <% }) %>
-            </div>
-        </div>
-    </main>
+        </main>
+        <aside>
+            <h1>Customize your poster</h1>
+            <section>
+                <p>Choose your background:</p>
+                <form id="background">
+                    <label>
+                        Beach
+                        <img src="/static/images/beach.jpeg" width="100">
+                        <input type="radio" id="beach" name="bg" checked>
+                    </label>
+                    <label for="party">
+                        Party
+                        <img src="/static/images/party.jpeg" width="100">
+                        <input type="radio" id="party" name="bg">
+                    </label>
+                    <label for="winter">
+                        Winter
+                        <img src="/static/images/winter.jpeg" width="100">
+                        <input type="radio" id="winter" name="bg">
+                    </label>
+                </form>
+            </section>
+            <section>
+                <p>Share Your Spotify Festival</p>
+                <button id="download">Download image</button>
+            </section>
+        </aside>
+        <script>
+            document.getElementById("download").addEventListener("click", () => {
+                const element = document.getElementById("poster");
+
+                html2canvas(element).then(canvas => {
+                    // Convert to image
+                    const dataUrl = canvas.toDataURL("image/png");
+
+                    // Create download link
+                    const link = document.createElement("a");
+                    link.href = dataUrl;
+                    link.download = "screenshot.png";
+                    link.click();
+                });
+            });
+        </script>
 </body>
+
 </html>
