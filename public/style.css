@@ -14,10 +14,9 @@ html,
 body {
     height: 100%;
     font-family: 'DynaPuff', sans-serif;
-
 }
 
-body {
+body.poster {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,9 +59,10 @@ aside section p {
     font-weight: 700;
 }
 
-.poster {
-    max-height: calc(100vh - 100px);
-    aspect-ratio: .75/1;
+div.poster {
+    max-width: 600px;
+    width: 100%;
+    aspect-ratio: 0.75/1;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -75,11 +75,11 @@ aside section p {
     color: #fff;
 }
 
-.poster:hover {
+div.poster:hover {
     transform: scale(1);
 }
 
-.poster h1 {
+div.poster h1 {
     text-align: center;
     font-size: 3rem;
     white-space: nowrap;
@@ -191,6 +191,7 @@ form label div {
 }
 
 form label div {
+    height: 135px;
     width: 100px;
     background: #202020;
     display: flex;
@@ -259,4 +260,39 @@ input[type="text"] {
 body:has(#custom:checked) #customcolor,
 body:has(#custom:checked) #customimage {
     display: block
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+    body.poster {
+        display: block;
+        height: max-content;
+    }
+
+    body.poster h1 {
+        font-size: 2rem;
+        white-space: wrap;
+    }
+
+    .headliner {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .featured {
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+
+    .other {
+        font-size: .75rem;
+        font-weight: 700;
+    }
+
+    body.poster aside h1 {
+        text-align: left;
+    }
 }

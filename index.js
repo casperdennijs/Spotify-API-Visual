@@ -1,6 +1,6 @@
 const express = require('express');
 const session = require('express-session');
-const dotenv = require('dotenv');
+require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -19,9 +19,9 @@ app.use(session({
 }))
 const path = require('path');
 
-var client_id = process.env.CLIENT_ID;
-var client_secret = process.env.CLIENT_SECRET;
-var redirect_uri = 'https://spotify-api-visual-production-08b4.up.railway.app/callback';
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
+const redirect_uri = 'http://127.0.0.1:3000/callback';
 // http://127.0.0.1:3000/callback
 // https://spotify-api-visual-production-08b4.up.railway.app/callback
 
@@ -34,8 +34,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/login', function (req, res) {
-    var state = 'spotify';
-    var scope = 'user-top-read';
+    const state = 'spotify';
+    const scope = 'user-top-read';
 
     const params = new URLSearchParams({
         response_type: 'code',
@@ -49,8 +49,8 @@ app.get('/login', function (req, res) {
 });
 
 app.get('/callback', async (req, res) => {
-    var code = req.query.code || null;
-    var state = req.query.state || null;
+    const code = req.query.code || null;
+    const state = req.query.state || null;
 
     if (state === null) {
         res.redirect('/');
