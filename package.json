@@ -1,0 +1,28 @@
+{
+  "name": "spotify-api-visual",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/casperdennijs/Spotify-API-Visual#readme",
+  "bugs": {
+    "url": "https://github.com/casperdennijs/Spotify-API-Visual/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casperdennijs/Spotify-API-Visual.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
