@@ -5,6 +5,11 @@
     line-height: 1;
 }
 
+:root {
+    --custom-color: #202020;
+    --custom-url: url();
+}
+
 html,
 body {
     height: 100%;
@@ -66,7 +71,7 @@ aside section p {
     padding: 2rem;
     border-radius: 5px;
     transform: scale(.95);
-    transition: 200ms ease-in;
+    transition: 200ms ease-in transform;
     color: #fff;
 }
 
@@ -153,6 +158,7 @@ aside section p {
 form {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 form label {
@@ -167,18 +173,29 @@ form label:has(input:checked) {
     color: #229935;
 }
 
-form label:has(input:checked) img {
+form label:has(input:checked) img,
+form label:has(input:checked) div {
     border: 2px solid #229935;
 }
 
-form label:hover img {
+form label:hover img,
+form label:hover div {
     border: 2px solid #fff !important;
 }
 
-form label img {
+form label img,
+form label div {
     border-radius: 5px;
     height: 100%;
     max-height: 135px;
+}
+
+form label div {
+    width: 100px;
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form label input {
@@ -219,6 +236,11 @@ body:has(#winter:checked) .poster {
     /* https://images.pexels.com/photos/2422497/pexels-photo-2422497.jpeg */
 }
 
+body:has(#custom:checked) .poster {
+    background: var(--custom-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), var(--custom-image);
+}
+
 input[type="text"] {
     padding: .5rem;
     border: 2px solid #fff;
@@ -226,4 +248,15 @@ input[type="text"] {
     width: 100%;
     color: #fff;
     background: #101010;
+}
+
+#customcolor,
+#customimage {
+    display: none;
+    width: 100%;
+}
+
+body:has(#custom:checked) #customcolor,
+body:has(#custom:checked) #customimage {
+    display: block
 }

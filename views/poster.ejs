@@ -124,6 +124,13 @@
                         <img src="/static/images/winter.jpeg" width="100">
                         <input type="radio" id="winter" name="bg">
                     </label>
+                    <label for="custom">
+                        Custom
+                        <div>Custom</div>
+                        <input type="radio" id="custom" name="bg">
+                    </label>
+                    <input type="text" id="customcolor" placeholder="Color (e.g. #202020)">
+                    <input type="text" id="customimage" placeholder="Custom Image URL">
                 </form>
             </section>
             <section>
@@ -134,15 +141,27 @@
         <script>
             document.getElementById("download").addEventListener("click", () => {
                 const element = document.getElementById("poster");
+                const title = document.querySelector("form#title input").value;
 
-                html2canvas(element).then(canvas => {
-                    // Convert to image
+                function formatDate(date) {
+                    const d = date.getDate();
+                    const m = date.getMonth() + 1;
+                    const y = date.getFullYear();
+                    const h = date.getHours();
+                    const min = date.getMinutes();
+
+                    return `${d}${m}${y}${h}${min.toString().padStart(2, '0')}`;
+                }
+                const now = new Date();
+
+                html2canvas(element, {
+                    backgroundColor: null
+                }).then(canvas => {
                     const dataUrl = canvas.toDataURL("image/png");
 
-                    // Create download link
                     const link = document.createElement("a");
                     link.href = dataUrl;
-                    link.download = "screenshot.png";
+                    link.download = `${title}_${formatDate(now)}`;
                     link.click();
                 });
             });
@@ -153,6 +172,22 @@
 
             titleInput.addEventListener("input", (event) => {
                 titleEl.textContent = event.target.value;
+            })
+        </script>
+        <script>
+            var r = document.querySelector(':root');
+            var rs = getComputedStyle(r);
+            const customcolorInput = document.querySelector("input#customcolor");
+            const customimageInput = document.querySelector("input#customimage");
+
+            customcolorInput.addEventListener("input", (event) => {
+                r.style.setProperty('--custom-color', `${event.target.value}`);
+                console.log("Custom color loaded");
+            })
+
+            customimageInput.addEventListener("input", (event) => {
+                r.style.setProperty('--custom-image', `url(${event.target.value})`);
+                console.log("Custom image loaded");
             })
         </script>
 </body>
