@@ -18,7 +18,7 @@
         , "Dec" ] %>
         <main>
             <div id="poster" class="poster bg-1">
-                <h1>Your Spotify Festival</h1>
+                <h1 class="title">Your Spotify Festival</h1>
                 <div class="day friday">
                     <h2>• <%= days[date.getDay()-1] %>, <%= date.getDate() %>
                                 <%= month[date.getMonth()] %> •</h2>
@@ -101,6 +101,12 @@
         <aside>
             <h1>Customize your poster</h1>
             <section>
+                <p>Poster title:</p>
+                <form id="title">
+                    <input type="text" maxlength="24" value="Your Spotify Festival">
+                </form>
+            </section>
+            <section>
                 <p>Choose your background:</p>
                 <form id="background">
                     <label>
@@ -140,6 +146,14 @@
                     link.click();
                 });
             });
+        </script>
+        <script>
+            const titleEl = document.querySelector("h1.title");
+            const titleInput = document.querySelector("form#title input");
+
+            titleInput.addEventListener("input", (event) => {
+                titleEl.textContent = event.target.value;
+            })
         </script>
 </body>
 
