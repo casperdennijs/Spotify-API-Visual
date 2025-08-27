@@ -21,6 +21,7 @@
             height: 100%;
             aspect-ratio: .75/1;
             border: 2px solid black;
+            border-radius: 8px;
             padding: 2rem;
             background-color: pink;
             display: flex;
@@ -28,6 +29,12 @@
             justify-content: center;
             gap: 1rem;
             margin: 0 auto;
+            transform: scale(0.9);
+            transition: 200ms;
+        }
+
+        main:hover {
+            transform: scale(0.95);
         }
 
         main h1 {
@@ -94,6 +101,7 @@
 </head>
 <body>
     <main id="capture">
+        <h1>Your Spotify Festival</h1>
         <div class="top-artist">
             <% items.slice(0, 1).forEach(item => { %>
                 <a target="_blank" href="https://open.spotify.com/artist/<%= item.id %>"><%= item.name %></a>
