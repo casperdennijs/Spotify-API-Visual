@@ -79,7 +79,7 @@ app.get('/poster', async (req, res) => {
         return res.redirect('/');
     }
 
-    const response = await fetch('https://api.spotify.com/v1/me/top/artists?time_range=long_term&limit=50', {
+    const response = await fetch('https://api.spotify.com/v1/me/top/artists?time_range=long_term&limit=30', {
         headers: {
             Authorization: `Bearer ${req.session.access_token}`
         }
