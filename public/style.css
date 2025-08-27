@@ -295,4 +295,14 @@ body:has(#custom:checked) #customimage {
     body.poster aside h1 {
         text-align: left;
     }
+
+    .day h2 {
+        text-align: center;
+        font-size: .75rem;
+        font-weight: 400;
+    }
+
+    div.poster:hover {
+        transform: scale(.95);
+    }
 }
