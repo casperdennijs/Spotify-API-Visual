@@ -206,6 +206,7 @@ form label input {
 }
 
 #download {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 100%;
     background: #101010;
@@ -214,6 +215,7 @@ form label input {
     color: #229935;
     padding: .5rem;
     transition: 200ms ease-in;
+    font-size: 1rem;
 }
 
 #download:hover {
@@ -243,12 +245,14 @@ body:has(#custom:checked) .poster {
 }
 
 input[type="text"] {
+    font-family: 'Montserrat', sans-serif;
     padding: .5rem;
     border: 2px solid #fff;
     border-radius: 5px;
     width: 100%;
     color: #fff;
     background: #101010;
+    font-size: 1rem;
 }
 
 #customcolor,

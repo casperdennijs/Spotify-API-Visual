@@ -21,7 +21,7 @@ const path = require('path');
 
 const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
-const redirect_uri = 'https://spotify-api-visual-production-08b4.up.railway.app/callback';
+const redirect_uri = 'http://127.0.0.1:3000/callback';
 // http://127.0.0.1:3000/callback
 // https://spotify-api-visual-production-08b4.up.railway.app/callback
 
