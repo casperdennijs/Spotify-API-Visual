@@ -18,7 +18,7 @@ const path = require('path');
 
 var client_id = 'c75febbdc63941e597b4e8520622a7c5';
 var client_secret = 'f04c16f242c94bc6a7b48b704ba5e090';
-var redirect_uri = 'http://127.0.0.1:3000/callback';
+var redirect_uri = 'https://spotify-api-visual-production-08b4.up.railway.app/callback';
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
