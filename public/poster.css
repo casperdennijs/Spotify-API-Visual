@@ -269,12 +269,12 @@ body:has(#custom:checked) #customimage {
 }
 
 @media screen and (max-width: 992px) {
-    body.poster {
+    body {
         display: block;
         height: max-content;
     }
 
-    body.poster h1 {
+    body h1 {
         font-size: 2rem;
         white-space: wrap;
     }
@@ -294,7 +294,7 @@ body:has(#custom:checked) #customimage {
         font-weight: 700;
     }
 
-    body.poster aside h1 {
+    body aside h1 {
         text-align: left;
     }
 
