@@ -1,0 +1,46 @@
+body {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+div {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+a:first-of-type {
+    padding: 1rem;
+    color: #101010;
+    background: #229935;
+    border: 2px solid #229935;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 200ms ease-in;
+}
+
+a:first-of-type:hover {
+    background: #101010;
+    color: #229935;
+}
+
+a:last-of-type {
+    color: #229935;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
+    }
+}

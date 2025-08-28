@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+:root {
+    --custom-color: #202020;
+    --custom-url: url();
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'DynaPuff', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    background-color: #101010;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #fff;
+}
+
+footer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer p {
+    color: #eee;
+    text-align: center;
+    font-size: .75rem;
+}

@@ -1,0 +1,849 @@
+[
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2zhgWhhKeDGw6gGd16y7tc"
+        },
+        "followers": {
+            "href": null,
+            "total": 65282
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/2zhgWhhKeDGw6gGd16y7tc",
+        "id": "2zhgWhhKeDGw6gGd16y7tc",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Drex Carter",
+        "popularity": 47,
+        "type": "artist",
+        "uri": "spotify:artist:2zhgWhhKeDGw6gGd16y7tc"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
+        },
+        "followers": {
+            "href": null,
+            "total": 40270412
+        },
+        "genres": [
+            "rap"
+        ],
+        "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
+        "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Travis Scott",
+        "popularity": 94,
+        "type": "artist",
+        "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+        },
+        "followers": {
+            "href": null,
+            "total": 7173451
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/4Gso3d4CscCijv0lmajZWs",
+        "id": "4Gso3d4CscCijv0lmajZWs",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Don Toliver",
+        "popularity": 89,
+        "type": "artist",
+        "uri": "spotify:artist:4Gso3d4CscCijv0lmajZWs"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2jku7tDXc6XoB6MO2hFuqg"
+        },
+        "followers": {
+            "href": null,
+            "total": 8046758
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/2jku7tDXc6XoB6MO2hFuqg",
+        "id": "2jku7tDXc6XoB6MO2hFuqg",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Tory Lanez",
+        "popularity": 83,
+        "type": "artist",
+        "uri": "spotify:artist:2jku7tDXc6XoB6MO2hFuqg"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6WSTevYt4rGwm8QPKQr7dU"
+        },
+        "followers": {
+            "href": null,
+            "total": 275803
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/6WSTevYt4rGwm8QPKQr7dU",
+        "id": "6WSTevYt4rGwm8QPKQr7dU",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "K.A.A.N.",
+        "popularity": 50,
+        "type": "artist",
+        "uri": "spotify:artist:6WSTevYt4rGwm8QPKQr7dU"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0VRj0yCOv2FXJNP47XQnx5"
+        },
+        "followers": {
+            "href": null,
+            "total": 7949616
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/0VRj0yCOv2FXJNP47XQnx5",
+        "id": "0VRj0yCOv2FXJNP47XQnx5",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Quavo",
+        "popularity": 80,
+        "type": "artist",
+        "uri": "spotify:artist:0VRj0yCOv2FXJNP47XQnx5"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE"
+        },
+        "followers": {
+            "href": null,
+            "total": 20272514
+        },
+        "genres": [
+            "k-pop",
+            "noise music"
+        ],
+        "href": "https://api.spotify.com/v1/artists/2dIgFjalVxs4ThymZ67YCE",
+        "id": "2dIgFjalVxs4ThymZ67YCE",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Stray Kids",
+        "popularity": 89,
+        "type": "artist",
+        "uri": "spotify:artist:2dIgFjalVxs4ThymZ67YCE"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6UWui6Csqc1ywqnDzjOWnk"
+        },
+        "followers": {
+            "href": null,
+            "total": 123549
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/6UWui6Csqc1ywqnDzjOWnk",
+        "id": "6UWui6Csqc1ywqnDzjOWnk",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Kid Travis",
+        "popularity": 49,
+        "type": "artist",
+        "uri": "spotify:artist:6UWui6Csqc1ywqnDzjOWnk"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0ErzCpIMyLcjPiwT4elrtZ"
+        },
+        "followers": {
+            "href": null,
+            "total": 9877940
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/0ErzCpIMyLcjPiwT4elrtZ",
+        "id": "0ErzCpIMyLcjPiwT4elrtZ",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "NLE Choppa",
+        "popularity": 78,
+        "type": "artist",
+        "uri": "spotify:artist:0ErzCpIMyLcjPiwT4elrtZ"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0fAEWMlRd4yiJBT2usaqqc"
+        },
+        "followers": {
+            "href": null,
+            "total": 147275
+        },
+        "genres": [
+            "hyperpop"
+        ],
+        "href": "https://api.spotify.com/v1/artists/0fAEWMlRd4yiJBT2usaqqc",
+        "id": "0fAEWMlRd4yiJBT2usaqqc",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Softwilly",
+        "popularity": 53,
+        "type": "artist",
+        "uri": "spotify:artist:0fAEWMlRd4yiJBT2usaqqc"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2tIP7SsRs7vjIcLrU85W8J"
+        },
+        "followers": {
+            "href": null,
+            "total": 6432369
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/2tIP7SsRs7vjIcLrU85W8J",
+        "id": "2tIP7SsRs7vjIcLrU85W8J",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "The Kid LAROI",
+        "popularity": 83,
+        "type": "artist",
+        "uri": "spotify:artist:2tIP7SsRs7vjIcLrU85W8J"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/68KmkJeZGfwe1OUaivBa2L"
+        },
+        "followers": {
+            "href": null,
+            "total": 5159115
+        },
+        "genres": [
+            "k-pop",
+            "noise music"
+        ],
+        "href": "https://api.spotify.com/v1/artists/68KmkJeZGfwe1OUaivBa2L",
+        "id": "68KmkJeZGfwe1OUaivBa2L",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "ATEEZ",
+        "popularity": 79,
+        "type": "artist",
+        "uri": "spotify:artist:68KmkJeZGfwe1OUaivBa2L"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/46fHMu9KxdQwcGV9xI1L9R"
+        },
+        "followers": {
+            "href": null,
+            "total": 159056
+        },
+        "genres": [
+            "melodic rap",
+            "emo rap"
+        ],
+        "href": "https://api.spotify.com/v1/artists/46fHMu9KxdQwcGV9xI1L9R",
+        "id": "46fHMu9KxdQwcGV9xI1L9R",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Dro Kenji",
+        "popularity": 54,
+        "type": "artist",
+        "uri": "spotify:artist:46fHMu9KxdQwcGV9xI1L9R"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4Ga1P7PMIsmqEZqhYZQgDo"
+        },
+        "followers": {
+            "href": null,
+            "total": 9952284
+        },
+        "genres": [
+            "melodic rap",
+            "rap"
+        ],
+        "href": "https://api.spotify.com/v1/artists/4Ga1P7PMIsmqEZqhYZQgDo",
+        "id": "4Ga1P7PMIsmqEZqhYZQgDo",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Lil Tecca",
+        "popularity": 84,
+        "type": "artist",
+        "uri": "spotify:artist:4Ga1P7PMIsmqEZqhYZQgDo"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1S96G0JKFvzJXHd61DLUPV"
+        },
+        "followers": {
+            "href": null,
+            "total": 7499
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/1S96G0JKFvzJXHd61DLUPV",
+        "id": "1S96G0JKFvzJXHd61DLUPV",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Oshua",
+        "popularity": 40,
+        "type": "artist",
+        "uri": "spotify:artist:1S96G0JKFvzJXHd61DLUPV"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2W6WP4pHQTFlbr2z9S4n54"
+        },
+        "followers": {
+            "href": null,
+            "total": 1429448
+        },
+        "genres": [
+            "phonk",
+            "drift phonk"
+        ],
+        "href": "https://api.spotify.com/v1/artists/2W6WP4pHQTFlbr2z9S4n54",
+        "id": "2W6WP4pHQTFlbr2z9S4n54",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Kordhell",
+        "popularity": 70,
+        "type": "artist",
+        "uri": "spotify:artist:2W6WP4pHQTFlbr2z9S4n54"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5y8tKLUfMvliMe8IKamR32"
+        },
+        "followers": {
+            "href": null,
+            "total": 4476526
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/5y8tKLUfMvliMe8IKamR32",
+        "id": "5y8tKLUfMvliMe8IKamR32",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "d4vd",
+        "popularity": 84,
+        "type": "artist",
+        "uri": "spotify:artist:5y8tKLUfMvliMe8IKamR32"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7B9Gg9epjQzfNGdxijFczG"
+        },
+        "followers": {
+            "href": null,
+            "total": 168477
+        },
+        "genres": [
+            "phonk",
+            "drift phonk"
+        ],
+        "href": "https://api.spotify.com/v1/artists/7B9Gg9epjQzfNGdxijFczG",
+        "id": "7B9Gg9epjQzfNGdxijFczG",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "MUPP",
+        "popularity": 57,
+        "type": "artist",
+        "uri": "spotify:artist:7B9Gg9epjQzfNGdxijFczG"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2qAwMsiIjTzlmfAkXKvhVA"
+        },
+        "followers": {
+            "href": null,
+            "total": 610279
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/2qAwMsiIjTzlmfAkXKvhVA",
+        "id": "2qAwMsiIjTzlmfAkXKvhVA",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Armani White",
+        "popularity": 62,
+        "type": "artist",
+        "uri": "spotify:artist:2qAwMsiIjTzlmfAkXKvhVA"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+        },
+        "followers": {
+            "href": null,
+            "total": 47440586
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+        "id": "246dkjvS1zLTtiykXe5h60",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Post Malone",
+        "popularity": 90,
+        "type": "artist",
+        "uri": "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+        },
+        "followers": {
+            "href": null,
+            "total": 43450869
+        },
+        "genres": [
+            "hip hop",
+            "west coast hip hop"
+        ],
+        "href": "https://api.spotify.com/v1/artists/2YZyLoL8N0Wb9xBt1NhZWg",
+        "id": "2YZyLoL8N0Wb9xBt1NhZWg",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Kendrick Lamar",
+        "popularity": 94,
+        "type": "artist",
+        "uri": "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1Ffb6ejR6Fe5IamqA5oRUF"
+        },
+        "followers": {
+            "href": null,
+            "total": 6542987
+        },
+        "genres": [
+            "metalcore",
+            "emo",
+            "screamo",
+            "rock",
+            "post-hardcore"
+        ],
+        "href": "https://api.spotify.com/v1/artists/1Ffb6ejR6Fe5IamqA5oRUF",
+        "id": "1Ffb6ejR6Fe5IamqA5oRUF",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Bring Me The Horizon",
+        "popularity": 81,
+        "type": "artist",
+        "uri": "spotify:artist:1Ffb6ejR6Fe5IamqA5oRUF"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0iEtIxbK0KxaSlF7G42ZOp"
+        },
+        "followers": {
+            "href": null,
+            "total": 11403213
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/0iEtIxbK0KxaSlF7G42ZOp",
+        "id": "0iEtIxbK0KxaSlF7G42ZOp",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Metro Boomin",
+        "popularity": 88,
+        "type": "artist",
+        "uri": "spotify:artist:0iEtIxbK0KxaSlF7G42ZOp"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6fxyWrfmjcbj5d12gXeiNV"
+        },
+        "followers": {
+            "href": null,
+            "total": 2838145
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/6fxyWrfmjcbj5d12gXeiNV",
+        "id": "6fxyWrfmjcbj5d12gXeiNV",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Denzel Curry",
+        "popularity": 74,
+        "type": "artist",
+        "uri": "spotify:artist:6fxyWrfmjcbj5d12gXeiNV"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6yhD1KjhLxIETFF7vIRf8B"
+        },
+        "followers": {
+            "href": null,
+            "total": 535504
+        },
+        "genres": [
+            "pop punk"
+        ],
+        "href": "https://api.spotify.com/v1/artists/6yhD1KjhLxIETFF7vIRf8B",
+        "id": "6yhD1KjhLxIETFF7vIRf8B",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Against The Current",
+        "popularity": 64,
+        "type": "artist",
+        "uri": "spotify:artist:6yhD1KjhLxIETFF7vIRf8B"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/164Uj4eKjl6zTBKfJLFKKK"
+        },
+        "followers": {
+            "href": null,
+            "total": 5594945
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/164Uj4eKjl6zTBKfJLFKKK",
+        "id": "164Uj4eKjl6zTBKfJLFKKK",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "JVKE",
+        "popularity": 78,
+        "type": "artist",
+        "uri": "spotify:artist:164Uj4eKjl6zTBKfJLFKKK"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0l0gRnqPszmcf6NQKcyuWH"
+        },
+        "followers": {
+            "href": null,
+            "total": 5030
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/0l0gRnqPszmcf6NQKcyuWH",
+        "id": "0l0gRnqPszmcf6NQKcyuWH",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "HunnaV",
+        "popularity": 40,
+        "type": "artist",
+        "uri": "spotify:artist:0l0gRnqPszmcf6NQKcyuWH"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/41X1TR6hrK8Q2ZCpp2EqCz"
+        },
+        "followers": {
+            "href": null,
+            "total": 2513869
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/artists/41X1TR6hrK8Q2ZCpp2EqCz",
+        "id": "41X1TR6hrK8Q2ZCpp2EqCz",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "bbno$",
+        "popularity": 80,
+        "type": "artist",
+        "uri": "spotify:artist:41X1TR6hrK8Q2ZCpp2EqCz"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+        },
+        "followers": {
+            "href": null,
+            "total": 22218641
+        },
+        "genres": [
+            "rap"
+        ],
+        "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+        "id": "1RyvyyTE3xzB2ZywiAwp0i",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Future",
+        "popularity": 92,
+        "type": "artist",
+        "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+    },
+    {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6Xgp2XMz1fhVYe7i6yNAax"
+        },
+        "followers": {
+            "href": null,
+            "total": 10809111
+        },
+        "genres": [
+            "melodic rap"
+        ],
+        "href": "https://api.spotify.com/v1/artists/6Xgp2XMz1fhVYe7i6yNAax",
+        "id": "6Xgp2XMz1fhVYe7i6yNAax",
+        "images": [
+            [
+                null
+            ],
+            [
+                null
+            ],
+            [
+                null
+            ]
+        ],
+        "name": "Trippie Redd",
+        "popularity": 81,
+        "type": "artist",
+        "uri": "spotify:artist:6Xgp2XMz1fhVYe7i6yNAax"
+    }
+]
