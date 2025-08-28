@@ -304,6 +304,10 @@ body:has(#custom:checked) #customimage {
         font-weight: 400;
     }
 
+    div.poster h1 {
+        font-size: 2rem;
+    }
+
     div.poster:hover {
         transform: scale(.95);
     }
