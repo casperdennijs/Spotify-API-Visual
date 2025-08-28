@@ -155,7 +155,8 @@
                 const now = new Date();
 
                 html2canvas(element, {
-                    backgroundColor: null
+                    backgroundColor: null,
+                    useCORS: true
                 }).then(canvas => {
                     const dataUrl = canvas.toDataURL("image/png");
 
