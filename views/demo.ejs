@@ -161,59 +161,8 @@
                 <p>Made with ❤️ by Casper den Nijs</p>
             </footer>
         </aside>
-        <script>
-            document.getElementById("download").addEventListener("click", () => {
-                const element = document.getElementById("poster");
-                const title = document.querySelector("form#title input").value;
-
-                function formatDate(date) {
-                    const d = date.getDate();
-                    const m = date.getMonth() + 1;
-                    const y = date.getFullYear();
-                    const h = date.getHours();
-                    const min = date.getMinutes();
-
-                    return `${d}${m}${y}${h}${min.toString().padStart(2, '0')}`;
-                }
-                const now = new Date();
-
-                html2canvas(element, {
-                    backgroundColor: null,
-                    useCORS: true
-                }).then(canvas => {
-                    const dataUrl = canvas.toDataURL("image/png");
-
-                    const link = document.createElement("a");
-                    link.href = dataUrl;
-                    link.download = `${title}_${formatDate(now)}`;
-                    link.click();
-                });
-            });
-        </script>
-        <script>
-            const titleEl = document.querySelector("h1.title");
-            const titleInput = document.querySelector("form#title input");
-
-            titleInput.addEventListener("input", (event) => {
-                titleEl.textContent = event.target.value;
-            })
-        </script>
-        <script>
-            var r = document.querySelector(':root');
-            var rs = getComputedStyle(r);
-            const customcolorInput = document.querySelector("input#customcolor");
-            const customimageInput = document.querySelector("input#customimage");
-
-            customcolorInput.addEventListener("input", (event) => {
-                r.style.setProperty('--custom-color', `${event.target.value}`);
-                console.log("Custom color loaded");
-            })
-
-            customimageInput.addEventListener("input", (event) => {
-                r.style.setProperty('--custom-image', `url(${event.target.value})`);
-                console.log("Custom image loaded");
-            })
-        </script>
+        <script src="/public/html2canvas.js"></script>
+        <script src="/public/poster.js"></script>
 </body>
 
 </html>
